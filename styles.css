@@ -40,19 +40,21 @@ header div img {
 }
 
 main {
-    border: solid 5px black;
+    /* border: solid 5px black; */
     width: 90%;
     margin: 0 auto;
     max-width: 1280px;
+
 }
 
 .hero-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 2px red;
-    width: 100%;
 
+    width: 100%;
+    padding: 30px 0 20px;
+    border-bottom: solid 1px #212121;
 }
 
 .hero-div img {
@@ -66,7 +68,7 @@ main {
     overflow: hidden;
     border-radius: 8px;
     margin-right: 20px;
-    border: solid 2px green;
+    /* border: solid 2px green; */
 }
 
 h1 {
@@ -94,6 +96,11 @@ button {
     align-items: center;
 }
 
+.edit:hover {
+    cursor: pointer;
+    color: #212121;
+}
+
 .description-flex {
     display: flex;
     flex-direction: column;
@@ -107,7 +114,7 @@ button {
 .button-div {
     display: flex;
     align-items: flex-end;
-    border: solid 2px green;
+    /* border: solid 2px green; */
 }
 
 button {
@@ -122,6 +129,11 @@ button {
     color: #fcf5e5;
 }
 
+button:hover {
+    background-color: #212121CC;
+    cursor: pointer;
+}
+
 span {
     margin-right: 7px;
     margin-top: -2px;
@@ -131,16 +143,19 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 0;
-    border: solid 2px blue;
+    padding: 20px 0 10px;
+    border-bottom: solid 1px #212121;
+    margin-bottom: 50px;
+    
 }
 
 .gallery-item {
     display: flex;
     flex-direction: column;
-    border: solid 2px black;
-    width: 31%;
-    margin-bottom: 15px;
+    /* border: solid 2px black; */
+    width: 32%;
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .gallery-img {
@@ -148,7 +163,12 @@ span {
     max-height: 413px;
     overflow: hidden;
     border-radius: 8px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
 }
 
 .gallery-img img {
@@ -169,5 +189,18 @@ span {
 }
 
 .like-btn {
+    opacity: .5;
+}
 
+.like-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    color: #212121B2;
+    margin-bottom: 50px;
 }
