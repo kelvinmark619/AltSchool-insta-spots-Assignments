@@ -134,6 +134,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:active {
+    scale: 0.98;
+}
+
 span {
     margin-right: 7px;
     margin-top: -2px;
@@ -146,7 +150,7 @@ span {
     padding: 20px 0 10px;
     border-bottom: solid 1px #212121;
     margin-bottom: 50px;
-    
+
 }
 
 .gallery-item {
@@ -203,4 +207,83 @@ footer p {
     line-height: 100%;
     color: #212121B2;
     margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pp-and-description-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pp-and-description-div>div:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .description-flex>div:first-child {
+        margin-bottom: 50px;
+    }
+
+    .edit {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .gallery-item {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pp-and-description-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pp-and-description-div>div:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .description-flex>div:first-child {
+        margin-bottom: 50px;
+    }
+
+    .edit {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .gallery-img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .button-div {
+        width: 100%;
+    }
 }
